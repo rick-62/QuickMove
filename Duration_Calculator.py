@@ -2,8 +2,9 @@ from time import mktime
 from time import strptime
 from googlemaps import *
 from collections import OrderedDict
+from ApiKey import key
 
-api_key = "AIzaSyCGSXtXXfWP1noF-09za5MTg61msfVg750"
+api_key = key()
 gmaps = Client(key=api_key)
 
 loc = raw_input("Enter the location: ")
